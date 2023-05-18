@@ -1,0 +1,266 @@
+<html>
+<head>
+<title>Smart Build</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" >
+</head>
+<body>
+<section id="burns">
+     <div class="burns-text">
+          <h1>Smart Build</h1>
+          <p>Bridging the gap in the construction industry</p>
+          
+          <div class="container">   
+          <button class="login-btn" onclick="document.getElementById('login-form').style.display='block'"style="width:auto;">Login</button>
+             <div id="login-form"class="login-page">
+                <!---Creating the Form box-->
+                <div class="form-box">
+                   <div class="button-box">
+                       <div id="btn"></div>
+                           <button type="button" onclick="login()"class="toggle-btn">Login</button>
+             
+                           <button type="button"onclick="register()"class="toggle-btn">Register</button>
+                       </div>
+                            <!----------Login Form--------------->
+                       <form id="login"class="input-group-login">
+                         <input type="text" class="input-field"placeholder="Enter email" required>
+                         <input type="password" class="input-field"placeholder="Enter password" required>
+                         <input type="checkbox" class="check-box"><span>Remember Password</span>
+                         <button type="submit" class="submit-btn">Log In</button>
+                      </form>
+                            <!-------Registration Form---------->
+                      <form id="register"class="input-group-register">
+                         <input type="text" class="input-field"placeholder="First Name" required>
+                         <input type="text" class="input-field"placeholder="Last Name" required>
+                         <input type="email" class="input-field"placeholder="Enter email" required>
+                         <input type="password" class="input-field"placeholder="Enter password" required>
+                         <input type="password" class="input-field"placeholder="Confirm password" required>
+                         <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                         <button type="submit" class="submit-btn">Register</button>
+                  
+                      </form>
+             
+             
+                     </div>
+             
+             
+             
+                  </div>
+              </div>
+           </div>
+ </section>
+ 
+ <script>
+     var x=document.getElementById('login');
+     var y=document.getElementById('register');
+     var z=document.getElementById('btn');
+     function register()
+     {
+         x.style.left="-400px";
+         y.style.left="50px";
+         z.style.left="110px";
+     }
+     function login()
+     {
+         x.style.left="50px";
+         y.style.left="450px";
+         z.style.left="0px";
+     }
+ </script>
+     <!-----------------This script makes the form box disappear once you click outside it----------->
+       <script>
+           var modal= document.getElementById("login-form");
+             window.onclick = function(event)
+             {
+               if(event.target == modal)
+                 {
+                   modal.style.display= "none";
+                 }
+             }
+  
+ 
+        </script>
+ 
+<!--------------------------Navigation Bar------------------>
+   <div id="sideNav">
+      <nav>
+      <ul>
+         <li><a href="#">HOME</a></li>
+         <li><a href="#SERVICES">SERVICES</a></li>
+         <li><a href="#">TESTIMONIALS</a></li>
+         <li><a href="#CONTACTS">CONTACTS</a></li>
+     </ul>    
+     </nav>   
+   </div>
+         <div id="menuBtn">
+            <img src="menuuu.png"> 
+      </div>
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+       sideNav.style.right= "0";
+       menu.src="close.jpg";
+       
+    }    
+    else{  
+        sideNav.style.right="-250px";
+    } 
+}
+</script>
+
+  <div class="wrapper" id="SERVICES">
+    <h1>SERVICES</h1>
+    <p>Smart Build provides a wide variety of services that are necessary for any construction project. </p>
+
+    <div class="content-box">
+        <div class="card">
+          <i class="bx bx-hard-hat bx-md"></i>
+          <h2>Engineers</h2>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada quam quis
+              urna varius tincidunt.
+          </p>
+        </div>
+    
+
+       <div class="card">
+         <i class="bx bx-ruler bx-md "></i>
+         <h2>Architects</h2>
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada quam quis
+            urna varius tincidunt.
+         </p>
+       </div>
+
+
+      <div class="card">
+        <i class="bx bx-home-alt-2 bx-md "></i>
+        <h2>Masons</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada quam quis
+          urna varius tincidunt.
+
+        </p>
+     </div>
+
+   
+     <div class="card">
+       <i class="bx bx-user bx-md "></i>
+       <h2>Foremen</h2>
+       <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada quam quis
+          urna varius tincidunt.
+
+       </p>
+     </div>
+
+
+     <div class="card">
+       <i class="bx bx-paint-roll bx-md "></i>
+       <h2>Painters</h2>
+       <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada quam quis
+          urna varius tincidunt.
+
+       </p>
+     </div>
+
+
+     <div class="card">
+          <i class="bx bx-store bx-md "></i>
+          <h2>Suppliers</h2>
+          <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada quam quis
+               urna varius tincidunt.
+  
+          </p>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+   <section class="contact" id="CONTACTS">
+     <div class="content">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Curabitur malesuada quam quis
+          urna varius tincidunt.</p>
+     </div>
+
+     <div class="container">
+         <div class="contactInfo">
+            <div class="box">
+                <i class="bx bx-phone bx-md"></i>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>+254-181-000-000</p>
+                </div>
+            </div>
+         
+            <div class="box">
+              <i class="bx bx-envelope bx-md "></i>
+              <div class="text">
+                  <h3>Email</h3>
+                  <p>smartbuild@gmail.com</p>
+              </div>
+            </div>
+          
+          
+         </div>
+
+         <div class="contactForm">
+             <form>
+                 <h2>Send Message</h2>
+                      <div class="inputBox">
+                        <input type="text" name="" required="required">
+                       <!--<span>Full Name</span>-->
+                      </div>
+
+                     <div class="inputBox">
+                        <input type="text" name="" required="required">
+                       <!---- <span>Email</span>-->
+                     </div>
+
+                     <div class="inputBox">
+                        <textarea required="required"></textarea>
+                       <!--- <span>Type your message...</span>--->
+                     </div>
+
+                     <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                        
+                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+         </div>
+     </div>
+  </section>
+</body>
+</html>
